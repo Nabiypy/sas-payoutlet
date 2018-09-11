@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
-import { ClarityModule } from '@clr/angular';
+import { ClarityModule, ClrFormsNextModule } from '@clr/angular';
 
 import { CustomerComponent } from './customer/customer.component';
 import { CustomersComponent } from './customers/customers.component';
@@ -37,6 +37,7 @@ const forumsRoutes: Routes = [
     FormsModule,
     HttpModule,
     ClarityModule.forChild(),
+    ClrFormsNextModule,
     RouterModule.forChild(forumsRoutes),
   ],
   providers: [

@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 
 import { AppComponent } from './app.component';
-import { ClarityModule } from '@clr/angular';
+import { ClarityModule, ClrFormsNextModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -49,6 +49,7 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     ClarityModule,
+    ClrFormsNextModule,
     BrowserAnimationsModule,
     FormsModule,
     ForumsModule,

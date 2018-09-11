@@ -6,13 +6,6 @@
 <div class="row"></div><br><br>
 <div class="row">
   <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-    <!--<div class="card">-->
-      <!--<div class="card-block">-->
-        <!--<h3 class="card-title">1</h3>-->
-        <!--<div class="card-text">-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
   </div>
 
   <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
@@ -37,13 +30,6 @@
   </div>
 
   <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-    <!--<div class="card">-->
-      <!--<div class="card-block">-->
-        <!--<h3 class="card-title">4</h3>-->
-        <!--<p class="card-text">-->
-        <!--</p>-->
-      <!--</div>-->
-    <!--</div>-->
   </div>
 
 </div>
@@ -61,7 +47,7 @@
   <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
     <div class="card">
       <div class="card-block">
-        <h3 class="card-title">6</h3>
+        <h3 class="card-title">Brokerage</h3>
         <p class="card-text">
         </p>
       </div>
@@ -71,7 +57,7 @@
   <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
     <div class="card">
       <div class="card-block">
-        <h3 class="card-title">7</h3>
+        <h3 class="card-title">Midas</h3>
         <div class="card-text">
           <!--<app-investments></app-investments>-->
         </div>
@@ -102,7 +88,18 @@
   <clr-wizard-page>
     <ng-template clrPageTitle>Personal Details </ng-template>
     <div class="row">
-      <div class="col-lg-6">1</div>
+      <div class="col-lg-6">
+        <form clrForm>
+          <clr-input-container>
+            <label>Field 1 label</label>
+            <input clrInput type="text" [(ngModel)]="model" name="example" />
+          </clr-input-container>
+          <clr-input-container>
+            <label>Field 2 label</label>
+            <input clrInput type="text" [(ngModel)]="model" name="example" />
+          </clr-input-container>
+        </form>
+      </div>
       <div class="col-lg-6">2</div>
     </div>
   </clr-wizard-page>
