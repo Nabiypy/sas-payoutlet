@@ -1,0 +1,15 @@
+.customer-wrapper {
+  background: none;
+}
+.customer-wrapper .customer {
+  display: block;
+  width: 100%;
+  background: none;
+}
+.customer-wrapper .customer:after {
+  background: none;
+}
+
+/*cushero .card {*/
+  /*margin-top: 0rem;*/
+/*}*/

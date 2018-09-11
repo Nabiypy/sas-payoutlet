@@ -1,0 +1,118 @@
+<!--<header class="header header-6">-->
+  <!--<div class="branding">-->
+    <!--<span class="title">{{customer?.title}}</span>-->
+  <!--</div>-->
+<!--</header>-->
+<div class="row"></div><br><br>
+<div class="row">
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+    <!--<div class="card">-->
+      <!--<div class="card-block">-->
+        <!--<h3 class="card-title">1</h3>-->
+        <!--<div class="card-text">-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  </div>
+
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+    <div class="card clickable" (click)="wizardLarge.open()">
+      <div class="card-block">
+        <h3 class="card-title">Fortune Fund</h3>
+        <p class="card-text">
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+    <div class="card clickable">
+      <div class="card-block">
+        <h3 class="card-title">Private Wealth</h3>
+        <div class="card-text">
+          <!--<app-investments></app-investments>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+    <!--<div class="card">-->
+      <!--<div class="card-block">-->
+        <!--<h3 class="card-title">4</h3>-->
+        <!--<p class="card-text">-->
+        <!--</p>-->
+      <!--</div>-->
+    <!--</div>-->
+  </div>
+
+</div>
+<div class="row">
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+    <!--<div class="card">-->
+      <!--<div class="card-block">-->
+        <!--<h3 class="card-title">1</h3>-->
+        <!--<div class="card-text">-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  </div>
+
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">6</h3>
+        <p class="card-text">
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">7</h3>
+        <div class="card-text">
+          <!--<app-investments></app-investments>-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+    <!--<div class="card">-->
+      <!--<div class="card-block">-->
+        <!--<h3 class="card-title">4</h3>-->
+        <!--<p class="card-text">-->
+        <!--</p>-->
+      <!--</div>-->
+    <!--</div>-->
+  </div>
+
+</div>
+
+<clr-wizard #wizardlg [(clrWizardOpen)]="lgOpen" clrWizardSize="lg">
+  <clr-wizard-title>{{accountype}}</clr-wizard-title>
+
+  <clr-wizard-button [type]="'cancel'">Cancel</clr-wizard-button>
+  <clr-wizard-button [type]="'previous'">Back</clr-wizard-button>
+  <clr-wizard-button [type]="'next'">Next</clr-wizard-button>
+  <clr-wizard-button [type]="'finish'">Finish</clr-wizard-button>
+
+  <clr-wizard-page>
+    <ng-template clrPageTitle>Personal</ng-template>
+    ...
+  </clr-wizard-page>
+
+  <clr-wizard-page>
+    <ng-template clrPageTitle>Page 2</ng-template>
+    ...
+  </clr-wizard-page>
+
+  <clr-wizard-page>
+    <ng-template clrPageTitle>Page 3</ng-template>
+    ...
+  </clr-wizard-page>
+</clr-wizard>
+
+<router-outlet></router-outlet>
