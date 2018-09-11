@@ -11,8 +11,9 @@ import {ClrWizard} from '@clr/angular';
   styleUrls: ['./customer.component.css']
 })
 export class CustomerComponent implements OnInit {
-  @ViewChild('wizardlg') wizardLarge: ClrWizard;
-  lgOpen: Boolean = false;
+  @ViewChild('wizardxl') wizardExtraLarge: ClrWizard;
+  // lgOpen: Boolean = false;
+  xlOpen: Boolean = false;
   accountype: String = 'Individual Account';
 
   constructor(

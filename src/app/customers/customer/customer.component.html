@@ -16,7 +16,7 @@
   </div>
 
   <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-    <div class="card clickable" (click)="wizardLarge.open()">
+    <div class="card clickable" (click)="wizardxl.open()">
       <div class="card-block">
         <h3 class="card-title">Fortune Fund</h3>
         <p class="card-text">
@@ -91,7 +91,7 @@
 
 </div>
 
-<clr-wizard #wizardlg [(clrWizardOpen)]="lgOpen" clrWizardSize="lg">
+<clr-wizard #wizardxl [(clrWizardOpen)]="xlOpen" >
   <clr-wizard-title>{{accountype}}</clr-wizard-title>
 
   <clr-wizard-button [type]="'cancel'">Cancel</clr-wizard-button>
@@ -100,19 +100,40 @@
   <clr-wizard-button [type]="'finish'">Finish</clr-wizard-button>
 
   <clr-wizard-page>
-    <ng-template clrPageTitle>Personal</ng-template>
+    <ng-template clrPageTitle>Personal Details </ng-template>
+    <div class="row">
+      <div class="col-lg-6">1</div>
+      <div class="col-lg-6">2</div>
+    </div>
+  </clr-wizard-page>
+
+
+  <clr-wizard-page>
+    <ng-template clrPageTitle>Beneficiary Details</ng-template>
     ...
   </clr-wizard-page>
 
   <clr-wizard-page>
-    <ng-template clrPageTitle>Page 2</ng-template>
+    <ng-template clrPageTitle>Risk Assessment</ng-template>
     ...
   </clr-wizard-page>
 
   <clr-wizard-page>
-    <ng-template clrPageTitle>Page 3</ng-template>
+    <ng-template clrPageTitle>Notification System</ng-template>
+    ...
+  </clr-wizard-page>
+
+  <clr-wizard-page>
+    <ng-template clrPageTitle>Uploads</ng-template>
+    ...
+  </clr-wizard-page>
+
+  <clr-wizard-page>
+    <ng-template clrPageTitle>Summary</ng-template>
     ...
   </clr-wizard-page>
 </clr-wizard>
+
+
 
 <router-outlet></router-outlet>

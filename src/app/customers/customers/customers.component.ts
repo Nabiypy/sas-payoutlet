@@ -11,8 +11,7 @@ import {ClrWizard} from '@clr/angular';
 export class CustomersComponent implements OnInit {
   customers: Forum[];
 
-  @ViewChild('wizardlg') wizardLarge: ClrWizard;
-
+  // @ViewChild('wizardlg') wizardLarge: ClrWizard;
   lgOpen: Boolean = false;
 
   constructor(private customersService: CustomersService) {}
