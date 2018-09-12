@@ -1,9 +1,11 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
+import {ClrWizard} from '@clr/angular';
+import {FormGroup, FormControl, Validators} from '@angular/forms';
+
 import { CustomersService } from '../services/customers.service';
 import { Forum } from '../services/data';
 
-import {ClrWizard} from '@clr/angular';
 
 @Component({
   selector: 'app-customer',
@@ -12,9 +14,20 @@ import {ClrWizard} from '@clr/angular';
 })
 export class CustomerComponent implements OnInit {
   @ViewChild('wizardxl') wizardExtraLarge: ClrWizard;
+  @ViewChild('number') numberFi: any;
   // lgOpen: Boolean = false;
   xlOpen: Boolean = false;
   accountype: String = 'Individual Account';
+
+  model = {
+    name: '',
+    favorite: '',
+    number: ''
+  };
+
+  exampleForm = new FormGroup({
+    sample: new FormControl('', Validators.required),
+  });
 
   constructor(
     private route: ActivatedRoute,

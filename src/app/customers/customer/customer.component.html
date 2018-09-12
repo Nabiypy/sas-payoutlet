@@ -86,24 +86,267 @@
   <clr-wizard-button [type]="'finish'">Finish</clr-wizard-button>
 
   <clr-wizard-page>
-    <ng-template clrPageTitle>Personal Details </ng-template>
-    <div class="row">
-      <div class="col-lg-6">
-        <form clrForm>
-          <clr-input-container>
-            <label>Field 1 label</label>
-            <input clrInput type="text" [(ngModel)]="model" name="example" />
-          </clr-input-container>
-          <clr-input-container>
-            <label>Field 2 label</label>
-            <input clrInput type="text" [(ngModel)]="model" name="example" />
-          </clr-input-container>
-        </form>
+    <ng-template clrPageTitle>Personal Details - A</ng-template>
+    <form>
+      <!-- title -->
+      <div class="form-row">
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm col-form-label"> </label>
+          <div class="col-sm-10">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Dr.</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+              <label class="form-check-label" for="inlineCheckbox2">Prof.</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+              <label class="form-check-label" for="inlineCheckbox3">Mr.</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option3">
+              <label class="form-check-label" for="inlineCheckbox4">Mrs.</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option3">
+              <label class="form-check-label" for="inlineCheckbox5">Ms.</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option3">
+              <label class="form-check-label" for="inlineCheckbox6">Miss.</label>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-6">2</div>
-    </div>
+      <!-- title end-->
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="firstname">First Name</label>
+          <input type="text" class="form-control " id="firstname" placeholder="">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="lastname">Last Name</label>
+          <input type="text" class="form-control " id="lastname" placeholder="">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="othernames">Other Name(s)</label>
+          <input type="text" class="form-control " id="othernames" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="postaladdr">Postal Address</label>
+          <textarea class="form-control" id="postaladdr" rows="2" placeholder="box 1234 Main St"></textarea>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="residenceaddr">Resident Address</label>
+          <textarea class="form-control" id="residenceaddr" rows="2" placeholder="Apartment, studio, or floor"></textarea>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="phone">Phone Number</label>
+          <input type="text" class="form-control" id="phone" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="phone">Email</label>
+          <input type="email" class="form-control" id="phone" placeholder="">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="country">Country of residence</label>
+          <input type="text" class="form-control " id="country" placeholder="">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Nationality</label>
+          <input type="text" class="form-control " id="inputPassword4" placeholder="">
+        </div>
+
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputState">Region</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose Region</option>
+            <option>Greater Accra</option>
+            <option>Ashanti Region</option>
+            <option>Northern Region</option>
+
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputCity">City</label>
+          <select id="inputCity" class="form-control">
+            <option selected>Select City</option>
+            <option>Accra</option>
+            <option>Kumasi</option>
+            <option>Takoradi</option>
+          </select>
+        </div>
+
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <!--Monthly&nbsp;Income (GHS)-->
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm col-form-label">Monthly&nbsp;Income (GHS)</label>
+          <div class="col-sm-10">
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                     value="option1">
+              <label class="form-check-label" for="inlineRadio1">Below 2,000</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                     value="option2">
+              <label class="form-check-label" for="inlineRadio2">2,000 - 4,999</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                     value="option3">
+              <label class="form-check-label" for="inlineRadio3">5,000 - 9,999</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                     value="option4">
+              <label class="form-check-label" for="inlineRadio4">Above 10,000</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
   </clr-wizard-page>
 
+  <clr-wizard-page>
+    <ng-template clrPageTitle>Personal Details - B</ng-template>
+    <form>
+      <!-- Marital status -->
+      <div class="form-row">
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm col-form-label"></label>
+          <div class="col-sm-10">
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="single" value="option1">
+              <label class="form-check-label" for="single">Single</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="married" value="option2">
+              <label class="form-check-label" for="married">Married</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="divorced" value="option3">
+              <label class="form-check-label" for="divorced">Divorced</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="widowed" value="option4">
+              <label class="form-check-label" for="widowed">Widowed</label>
+            </div>
+          </div>
+        </div>
+      </div><!-- marital status end-->
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputState">Gender</label>
+          <select id="inputState" class="form-control">
+            <option selected>Select Sex</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+
+
+        <div class="form-group col-md-4">
+          <label for="inputZip">Date of Birth</label>
+          <input type="Date" class="form-control" id="inputZip">
+        </div>
+
+        <div class="form-group col-md-4">
+          <label for="maidenname">Mother's Maiden Name</label>
+          <input type="text" class="form-control" id="maidenname">
+
+        </div>
+
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="idtype">Valid ID Type</label>
+          <select id="idtype" class="form-control">
+            <option selected>ID Type</option>
+            <option>Passport</option>
+            <option>Voter's ID</option>
+            <option>NHIS</option>
+            <option>National ID</option>
+            <option>Driver's License</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="idnumber">ID Number</label>
+          <input type="text" class="form-control" id="idnumber" placeholder="Enter number">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="doe">Date of Expiration</label>
+          <input type="Date" class="form-control" id="doe">
+        </div>
+
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="firstname">Occupation</label>
+          <input type="text" class="form-control " id="firstname" placeholder="">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="lastname">Name of Employer/School</label>
+          <input type="text" class="form-control " id="lastname" placeholder="">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="education">Level of Education</label>
+          <select id="education" class="form-control">
+            <option selected>Your Level of Education</option>
+            <option>Junior High School</option>
+            <option>Senior High School</option>
+            <option>Diploma</option>
+            <option>Degree</option>
+            <option>Postgraduate</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="tin">Tax Identification Number</label>
+          <input type="text" class="form-control " id="tin" placeholder="">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="funds">Other Sources of Funds</label>
+          <input type="text" class="form-control " id="funds" placeholder="">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="wealth">Other sources of wealth</label>
+          <input type="text" class="form-control " id="wealth" placeholder="">
+        </div>
+      </div>
+
+
+      <button type="submit" class="btn btn-primary">Submit &nbsp; <i class="fas fa-arrow-right"></i>
+      </button>
+    </form>
+  </clr-wizard-page>
 
   <clr-wizard-page>
     <ng-template clrPageTitle>Beneficiary Details</ng-template>
